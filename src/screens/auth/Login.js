@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import CustomButton from '../../components/CustomButton';
 import CustomTextInput from '../../components/CustomTextInput';
 import { ROUTES } from '../../utils';
-import { userLogin } from '../../app/reducers/auth';
+import { userLogin } from '../../actions/auth';  // ✅ FIXED IMPORT
 
 const Login = () => {
   const [email, setEmail] = useState('');
